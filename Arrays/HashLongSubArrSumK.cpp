@@ -17,7 +17,10 @@ int main(){
 
 	for(ll i = 0 ; i < n ; i++){
 		sum+=a[i];
-		hash[sum] = i;
+		// hash[sum] = i;  THIS IS WRONG. {2 , 0 , 0 , 0 , 3} becomes {2, 3} instead of {2, 0}. 
+		if( hash[sum].find() == hash.end()){
+			hash[sum] = i;
+		}
 		if(sum==k){
 			maxLen = max(maxLen , i+1);
 		}
