@@ -24,10 +24,10 @@ public:
         while(st <= en){
             long long int mid = (st + en)/2;
             long long int hrs = ttlhrs(piles, mid);
-            if(h >= hrs){
+            if(h >= hrs){ // pick slower eating speed
                 en = mid - 1;
             }
-            else{
+            else{ // pick faster eating speed
                 st = mid + 1;
             }
         }
