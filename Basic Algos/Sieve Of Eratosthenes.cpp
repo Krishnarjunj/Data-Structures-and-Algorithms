@@ -2,7 +2,7 @@ class Solution {
 public:
     int countPrimes(int n) {
         if(n==1 || n==2) return 0;
-        n--; // leetcode asked for < and not <= thats y
+        n--;  // leetcode asked for < and not <= thats y
         vector<bool> prime(n+1, true);
         for(int p = 2; p*p<=n ; p++){
             if(prime[p]==true){
