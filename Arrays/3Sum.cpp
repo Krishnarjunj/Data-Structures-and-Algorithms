@@ -1,4 +1,4 @@
-//BRUTE FORCE SOLUTION
+//BRUTE FORCE SOLUTIO N
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
